@@ -1,0 +1,30 @@
+test_generator:
+  class: DuffingDataset
+  module: datasets.duffing
+  params: &id001
+    F_ext: 0.39
+    T: 10.0
+    alpha: -1.0
+    beta: 1.0
+    gamma: 0.1
+    samples: 100
+    sigma: 0.01
+    timescale: 10
+test_loader:
+  class: TrajectoryDataset
+  module: datasets.base
+  args:
+    batch_time: 5
+    data_path: data/chaotic_duffing_01_test_trajectories.pth
+    expected_config: *id001
+train_generator:
+  class: DuffingDataset
+  module: datasets.duffing
+  params: *id001
+train_loader:
+  class: TrajectoryDataset
+  module: datasets.base
+  args:
+    batch_time: 5
+    data_path: data/chaotic_duffing_01_train_trajectories.pth
+    expected_config: *id001

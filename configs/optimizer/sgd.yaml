@@ -1,0 +1,5 @@
+# configs/optimizer/sgd.yaml
+module: torch.optim
+class: SGD
+args:
+  lr: 0.001

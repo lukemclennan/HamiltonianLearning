@@ -1,0 +1,36 @@
+test_generator:
+  class: WindyPendulumDataset
+  module: datasets.windy_pendulum
+  params: &id001
+    mass: 1.0
+    gravity: 9.81
+    length: 1.0
+    friction: 0.1
+    wind_res: 0.1
+    wind_speed: 1.0
+    T: 10.0
+    timescale: 10
+    samples: 100
+    q_lower: -0.785398
+    q_upper: 0.785398
+    sigma: 0.01
+  
+test_loader:
+  class: TrajectoryDataset
+  module: datasets.base
+  args:
+    batch_time: 5
+    data_path: data/windy_pendulum_test_trajectories.pth
+    expected_config: *id001
+train_generator:
+  class: WindyPendulumDataset
+  module: datasets.windy_pendulum
+  params: *id001
+  
+train_loader:
+  class: TrajectoryDataset
+  module: datasets.base
+  args:
+    batch_time: 5
+    data_path: data/windy_pendulum_train_trajectories.pth
+    expected_config: *id001

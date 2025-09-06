@@ -1,0 +1,16 @@
+dataset,lr,optimizer,trainer,model,epochs,save_dir
+chaotic_duffing,0.001,adam,noreg,pssgp,5000,checkpoints/all_port_d/chaotic_duffing_1_noreg_adam_pssgp
+chaotic_duffing,0.001,adam,equald,pssgp,5000,checkpoints/all_port_d/chaotic_duffing_1_equald_adam_pssgp
+chaotic_duffing,0.001,adam,gdad,pssgp,5000,checkpoints/all_port_d/chaotic_duffing_1_gdad_adam_pssgp
+chaotic_duffing_0,0.001,adam,noreg,pssgp,5000,checkpoints/all_port_d/chaotic_duffing_0_noreg_adam_pssgp
+chaotic_duffing_0,0.001,adam,equald,pssgp,5000,checkpoints/all_port_d/chaotic_duffing_0_equald_adam_pssgp
+chaotic_duffing_0,0.001,adam,gdad,pssgp,5000,checkpoints/all_port_d/chaotic_duffing_0_gdad_adam_pssgp
+chaotic_duffing_01,0.001,adam,noreg,pssgp,5000,checkpoints/all_port_d/chaotic_duffing_01_noreg_adam_pssgp
+chaotic_duffing_01,0.001,adam,equald,pssgp,5000,checkpoints/all_port_d/chaotic_duffing_01_equald_adam_pssgp
+chaotic_duffing_01,0.001,adam,gdad,pssgp,5000,checkpoints/all_port_d/chaotic_duffing_01_gdad_adam_pssgp
+chaotic_duffing_05,0.001,adam,noreg,pssgp,5000,checkpoints/all_port_d/chaotic_duffing_05_noreg_adam_pssgp
+chaotic_duffing_05,0.001,adam,equald,pssgp,5000,checkpoints/all_port_d/chaotic_duffing_05_equald_adam_pssgp
+chaotic_duffing_05,0.001,adam,gdad,pssgp,5000,checkpoints/all_port_d/chaotic_duffing_05_gdad_adam_pssgp
+chaotic_duffing_2,0.001,adam,noreg,pssgp,5000,checkpoints/all_port_d/chaotic_duffing_2_noreg_adam_pssgp
+chaotic_duffing_2,0.001,adam,equald,pssgp,5000,checkpoints/all_port_d/chaotic_duffing_2_equald_adam_pssgp
+chaotic_duffing_2,0.001,adam,gdad,pssgp,5000,checkpoints/all_port_d/chaotic_duffing_2_gdad_adam_pssgp

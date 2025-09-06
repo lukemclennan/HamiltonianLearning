@@ -1,0 +1,9 @@
+# configs/trainer/mtadam.yaml
+module: trainers.mtadam_trainer
+class: MTAdamTrainer
+args:
+  epochs: 500
+  batch_size: 100
+  log_interval: 10
+  device: cuda:0
+  save_dir: checkpoints/mtadam

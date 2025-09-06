@@ -1,0 +1,10 @@
+dataset,lr,optimizer,trainer,model,epochs,save_dir
+windy_pendulum,0.001,adam,noreg,pssgp,5000,checkpoints/all_port_d/windy_pendulum_noreg_adam_pssgp
+windy_pendulum,0.001,adam,equald,pssgp,5000,checkpoints/all_port_d/windy_pendulum_equald_adam_pssgp
+windy_pendulum,0.001,adam,gdad,pssgp,5000,checkpoints/all_port_d/windy_pendulum_gdad_adam_pssgp
+forced_spring,0.001,adam,noreg,pssgp,5000,checkpoints/all_port_d/forced_spring_noreg_adam_pssgp
+forced_spring,0.001,adam,equald,pssgp,5000,checkpoints/all_port_d/forced_spring_equald_adam_pssgp
+forced_spring,0.001,adam,gdad,pssgp,5000,checkpoints/all_port_d/forced_spring_gdad_adam_pssgp
+chaotic_duffing,0.001,adam,noreg,pssgp,5000,checkpoints/all_port_d/chaotic_duffing_noreg_adam_pssgp
+chaotic_duffing,0.001,adam,equald,pssgp,5000,checkpoints/all_port_d/chaotic_duffing_equald_adam_pssgp
+chaotic_duffing,0.001,adam,gdad,pssgp,5000,checkpoints/all_port_d/chaotic_duffing_gdad_adam_pssgp

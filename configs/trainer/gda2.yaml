@@ -1,0 +1,9 @@
+# configs/trainer/gda2.yaml
+module: trainers.gda2_trainer
+class: GDA2Trainer
+args:
+  epochs: 500
+  batch_size: 100
+  log_interval: 10
+  device: cuda:0
+  save_dir: checkpoints/gda2

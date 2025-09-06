@@ -1,0 +1,30 @@
+test_generator:
+  class: DampedPendulumDataset
+  module: datasets.damped_pendulum
+  params: &id001
+    T: 10.0
+    g: 9.81
+    gamma: 0.1
+    l: 1.0
+    m: 1.0
+    samples: 100
+    sigma: 0.0
+    timescale: 10
+test_loader:
+  class: TrajectoryDataset
+  module: datasets.base
+  args:
+    batch_time: 5
+    data_path: data/damped_pendulum_0_test_trajectories.pth
+    expected_config: *id001
+train_generator:
+  class: DampedPendulumDataset
+  module: datasets.damped_pendulum
+  params: *id001
+train_loader:
+  class: TrajectoryDataset
+  module: datasets.base
+  args:
+    batch_time: 5
+    data_path: data/damped_pendulum_0_train_trajectories.pth
+    expected_config: *id001

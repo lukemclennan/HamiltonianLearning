@@ -1,0 +1,10 @@
+# configs/model/noise_ssgp.yaml
+module: models.noise_informed_ssgp
+class: NoiseInformedSSGP
+args:
+  input_dim: 2
+  basis: 100
+  friction: true
+  K: 100
+  noise_scale: 0.1
+  dropout_rate: 0.0

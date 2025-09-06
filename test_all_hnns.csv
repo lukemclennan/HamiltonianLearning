@@ -1,0 +1,10 @@
+dataset,lr,optimizer,model,trainer,epochs,save_dir
+single_pendulum,0.001,adam,hnn,hnn,5000,checkpoints/all_hnn/single_pendulum_no_reg_adam_hnn
+damped_pendulum,0.001,adam,dhnn,hnn,5000,checkpoints/all_hnn/damped_pendulum_no_reg_adam_dhnn
+windy_pendulum,0.001,adam,phnn,hnn,5000,checkpoints/all_hnn/windy_pendulum_no_reg_adam_phnn
+conservative_spring,0.001,adam,hnn,hnn,5000,checkpoints/all_hnn/conservative_spring_no_reg_adam_hnn
+damped_spring,0.001,adam,dhnn,hnn,5000,checkpoints/all_hnn/damped_spring_no_reg_adam_dhnn
+forced_spring,0.001,adam,phnn,hnn,5000,checkpoints/all_hnn/forced_spring_no_reg_adam_phnn
+henon_helies,0.001,adam,hnn,hnn,5000,checkpoints/all_hnn/henon_helies_no_reg_adam_hnn
+unforced_duffing,0.001,adam,dhnn,hnn,5000,checkpoints/all_hnn/unforced_duffing_no_reg_adam_dhnn
+chaotic_duffing,0.001,adam,phnn,hnn,5000,checkpoints/all_hnn/chaotic_duffing_no_reg_adam_phnn

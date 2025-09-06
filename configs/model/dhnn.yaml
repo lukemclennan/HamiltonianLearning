@@ -1,0 +1,8 @@
+# configs/model/dhnn.yaml
+module: models.dhnn
+class: DHNN
+args:
+  in_dim: 2
+  hid_dim: 200
+  hid_layers: 1
+

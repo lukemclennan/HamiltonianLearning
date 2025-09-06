@@ -1,0 +1,6 @@
+# configs/optimizer/mtadam.yaml
+module: optimizers.mtadam
+class: MTAdam
+args:
+  lr: 0.001
+  weight_decay: 0.0

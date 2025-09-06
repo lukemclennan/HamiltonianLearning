@@ -1,0 +1,8 @@
+# configs/model/phnn.yaml
+module: models.phnn
+class: PHNN
+args:
+  in_dim: 2
+  hid_dim: 200
+  hid_layers: 1
+

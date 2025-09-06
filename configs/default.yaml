@@ -1,0 +1,12 @@
+# Select variants:
+dataset:  chaotic_duffing.yaml
+model:    noise_pssgp.yaml
+optimizer: adam.yaml
+trainer:   noise_gdad.yaml
+
+# Global overrides:
+data_root: "data/"   # e.g. /scratch/username/project/data
+mode:      train                  # or "visualize"
+
+# used for visualization
+checkpoint: "checkpoints/noise_informed_chaotic_duffing.pth.tar"

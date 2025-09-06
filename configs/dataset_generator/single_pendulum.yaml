@@ -1,0 +1,29 @@
+test_generator:
+  class: SinglePendulumDataset
+  module: datasets.single_pendulum
+  params: &id001
+    T: 10.0
+    g: 9.81
+    l: 1.0
+    m: 1.0
+    samples: 100
+    sigma: 0.1
+    timescale: 10
+test_loader:
+  class: TrajectoryDataset
+  module: datasets.base
+  args:
+    batch_time: 5
+    data_path: data/single_pendulum_test_trajectories.pth
+    expected_config: *id001
+train_generator:
+  class: SinglePendulumDataset
+  module: datasets.single_pendulum
+  params: *id001
+train_loader:
+  class: TrajectoryDataset
+  module: datasets.base
+  args:
+    batch_time: 5
+    data_path: data/single_pendulum_train_trajectories.pth
+    expected_config: *id001

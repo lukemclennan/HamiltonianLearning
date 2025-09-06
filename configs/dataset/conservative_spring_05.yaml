@@ -1,0 +1,16 @@
+class: TrajectoryDataset
+module: datasets.base
+args:
+  batch_time: 5
+  expected_config:
+    T: 10.0
+    gamma: 0.0
+    k: 1.0
+    m: 1.0
+    samples: 100
+    sigma: 0.05
+    timescale: 10
+
+train_data_file: "{data_root}/conservative_spring_05_train_trajectories.pth"
+val_data_file: "{data_root}/conservative_spring_05_test_trajectories.pth"
+test_data_file: "{data_root}/conservative_spring_05_test_trajectories.pth"

@@ -1,0 +1,30 @@
+test_generator:
+  class: HenonHeilesDataset
+  module: datasets.henon_helies
+  params: &id001
+    T: 10.0
+    alpha: 1.0
+    samples: 100
+    sigma: 0.1
+    timescale: 10
+    q_lower: -0.1
+    q_upper: 0.1
+test_loader:
+  class: TrajectoryDataset
+  module: datasets.base
+  args:
+    batch_time: 5
+    data_path: data/henon_helies_test_trajectories.pth
+    expected_config: *id001
+train_generator:
+  class: HenonHeilesDataset
+  module: datasets.henon_helies
+  params: *id001
+train_loader:
+  class: TrajectoryDataset
+  module: datasets.base
+  args:
+    batch_time: 5
+    data_path: data/henon_helies_train_trajectories.pth
+    expected_config: *id001
+

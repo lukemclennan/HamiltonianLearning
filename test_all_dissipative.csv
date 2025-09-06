@@ -1,0 +1,10 @@
+dataset,lr,optimizer,trainer,model,epochs,save_dir
+damped_pendulum,0.001,adam,noreg,ssgp,5000,checkpoints/all_dissipative_d/damped_pendulum_noreg_adam_ssgp
+damped_pendulum,0.001,adam,equald,ssgp,5000,checkpoints/all_dissipative_d/damped_pendulum_equald_adam_ssgp
+damped_pendulum,0.001,adam,gdad,ssgp,5000,checkpoints/all_dissipative_d/damped_pendulum_gdad_adam_ssgp
+damped_spring,0.001,adam,noreg,ssgp,5000,checkpoints/all_dissipative_d/damped_spring_noreg_adam_ssgp
+damped_spring,0.001,adam,equald,ssgp,5000,checkpoints/all_dissipative_d/damped_spring_equald_adam_ssgp
+damped_spring,0.001,adam,gdad,ssgp,5000,checkpoints/all_dissipative_d/damped_spring_gdad_adam_ssgp
+unforced_duffing,0.001,adam,noreg,ssgp,5000,checkpoints/all_dissipative_d/unforced_duffing_noreg_adam_ssgp
+unforced_duffing,0.001,adam,equald,ssgp,5000,checkpoints/all_dissipative_d/unforced_duffing_equald_adam_ssgp
+unforced_duffing,0.001,adam,gdad,ssgp,5000,checkpoints/all_dissipative_d/unforced_duffing_gdad_adam_ssgp
